@@ -1,0 +1,17 @@
+.section {
+    --background: #ffffff;
+    --color: #171717;
+    --antiColor: #ffffff;
+    --highColor: #cf2069;
+
+    background-color: var(--background);
+    .logo{
+        color: var(--color);
+        span{
+            color: var(--highColor);
+        }
+    }
+    .podLogo{
+        color: var(--color);
+    }
+}

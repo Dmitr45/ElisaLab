@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { useState } from "react";
+import "./globals.scss";
+import picTheme from "images/theme-light-dark.png"
 
 
 export const metadata: Metadata = {
@@ -7,14 +9,12 @@ export const metadata: Metadata = {
   description: "ElisaLab - помошник в лабораторной диагностике",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children}: Readonly<{children: React.ReactNode;}>) {
+
   return (
     <html lang="ru">
       <body>
+        <img src="images/theme-light-dark.png" />
         {children}
       </body>
     </html>

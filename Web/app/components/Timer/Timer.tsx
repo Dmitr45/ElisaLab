@@ -1,5 +1,5 @@
 'use client';
-import stiles from "./styles.module.css";
+import stiles from "./styles.module.scss";
 import { CountBox } from "./Count.js"
 import { useEffect } from "react";
 

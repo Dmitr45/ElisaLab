@@ -14,7 +14,6 @@ export default function RootLayout({ children}: Readonly<{children: React.ReactN
   return (
     <html lang="ru">
       <body>
-        <img src="images/theme-light-dark.png" />
         {children}
       </body>
     </html>

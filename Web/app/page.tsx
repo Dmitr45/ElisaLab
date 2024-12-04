@@ -1,14 +1,12 @@
 'use client';
 import {AppContextProvider} from "./context/ContextProvider";
 import { createContext, useContext, useState } from "react";
-import StartPage from "./components/PausePage/StartPage";
+import StartPage from "./components/StartPage/StartPage";
 
 
 
 
 export default function Home() {
-  const ThemeContext = createContext("darck");
-
   return (
     <div>
       <main>

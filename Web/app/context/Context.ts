@@ -20,10 +20,9 @@ const menuArr = [
 
 // Контекст для приложения ====================================================================================================
     const [darkThemeContext, setDarkThemeContext] = useState<boolean>(props.darkThemeContext || true);
-    let toggleDarkThemeContext = useCallback((bool:boolean)  => {setDarkThemeContext(bool)}, []);
+    let toggleDarkThemeContext = useCallback((bool:boolean):string  => {setDarkThemeContext(bool); return "Ok"}, []);
 
 
 
-let ContextObj = { darkThemeContext, toggleDarkThemeContext }
-return ContextObj
+return { darkThemeContext, toggleDarkThemeContext }
 }

@@ -6,17 +6,16 @@ import Timer from '../Timer/Timer';
 import DarckTheme from "../Theme/DarkTheme.module.scss";
 import LightTheme from "../Theme/LightTheme.module.scss";
 import picTheme from "/images/theme-light-dark.png";
+import ThemeChenge from '../Theme/TemeChenge';
 
 
 export default function PausePage(){
 let [theme, setTheme] = useState(LightTheme);
-const  {toggleDarkThemeContext, darkThemeContext } =  useAppContext(); // Массив элементов меню
+const  {toggleDarkThemeContext, darkThemeContext } =  useAppContext(); // Переключение темы
 
 
 
 useEffect(()=>{
-    //@ts-expect-error
-    toggleDarkThemeContext(false);
     darkThemeContext? setTheme(DarckTheme) : setTheme(LightTheme);
 },[darkThemeContext]);
 
@@ -24,11 +23,11 @@ useEffect(()=>{
 
 return (
 <div className={theme.section}>
+    <ThemeChenge/>
     <div className={style.page}>
         <div className={style.logo}><div className={theme.logo}>
             Elisa<span>Lab</span>
         <div className={style.podLogo}> <div className={theme.podLogo}>Assistant in laboratory diagnostics</div></div>
-            <Timer/> 
         </div></div>
     </div>
 </div>

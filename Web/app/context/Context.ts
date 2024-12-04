@@ -1,5 +1,6 @@
 'use client'
 import { useState, useCallback } from 'react';
+import { NameObjType } from './types';
 
 
 export const useCreateAppContext = function(props:any) {
@@ -8,13 +9,11 @@ export const useCreateAppContext = function(props:any) {
 
 //localStorage.clear();
 
-const menuArr = [
-    {id: 0, name: "Главная", link: "/"},    
-    {id: 1, name: "Проекты", link: "/prijects"},
-    {id: 2, name: "Блог", link: "https://vc.ru/u/3674302"},
-    {id: 3, name: "Реквизиты", link: "/requisites"}
+const NameApp:NameObjType = {"name": "Elisa",
+                            "span": "Lab",
+                            "slogan" : "Assistant in laboratory diagnostics"};
 
-];
+
 
 
 
@@ -24,5 +23,7 @@ const menuArr = [
 
 
 
-return { darkThemeContext, toggleDarkThemeContext }
+return { darkThemeContext, toggleDarkThemeContext, // Темная тема
+        NameApp, // Название приложения
+}
 }

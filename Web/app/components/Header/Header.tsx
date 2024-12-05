@@ -5,19 +5,24 @@ import styles from "./header.module.scss"
 
 
 
-export default function ThemeChenge(){
-const  {toggleDarkThemeContext, darkThemeContext } =  useAppContext(); // Переключение темы
+export default function Header(){
+const  {toggleDarkThemeContext, darkThemeContext, themeActive } =  useAppContext(); // Переключение темы
+
+
+
 let [onchegeTheme, setOncchengeTheme] = useState(true);
 
 useEffect(()=>{
 //@ts-expect-error
 toggleDarkThemeContext(onchegeTheme);
+localStorage.setItem("Dark_mode", onchegeTheme.toString())
 },[ onchegeTheme ]);
 
 
 return (
-<div>
-    <div className={styles. header}  onClick={()=> {setOncchengeTheme(!onchegeTheme); console.log("onchegeTheme: " + !onchegeTheme + "  darkThemeContext:  " + darkThemeContext) }}>
+    //@ts-expect-error
+<div className={themeActive.section}>
+    <div className={styles. header}  onClick={()=> {setOncchengeTheme(!onchegeTheme);}}>
     <p>{onchegeTheme? " Light mode " :  " Darck mode "}</p>
     </div>
 </div>

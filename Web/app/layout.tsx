@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { useState } from "react";
 import "./globals.scss";
-import picTheme from "images/theme-light-dark.png"
+
 
 
 export const metadata: Metadata = {

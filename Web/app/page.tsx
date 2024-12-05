@@ -2,7 +2,8 @@
 import Header from "@/app/components/Header/Header"
 import {AppContextProvider} from "@/app/context/ContextProvider";
 import { useEffect } from "react";
-import Authorization from "@/app/pages/auth/";
+import { Authorization } from "@/app/pages/auth/";
+import { Registration } from "@/app/pages/Registration/"
 
 
 
@@ -21,7 +22,8 @@ export default function Home() {
         <Header/>
       </header>
       <main>
-        <Authorization/>
+        {/* <Authorization/> */}
+        <Registration/>
       </main>
       <footer>
 

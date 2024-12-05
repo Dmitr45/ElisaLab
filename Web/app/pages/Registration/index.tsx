@@ -1,12 +1,13 @@
 'use client'
 import { useAppContext } from "@/app/context/ContextProvider"
 import { NameObjType } from "@/app/context/types";
-import { LoginForm } from "@/app/components/AuthForms/Login";
+import { RegistrationForm } from "@/app/components/AuthForms/Registration";
 import style from './styles.module.scss';
 
 
-export function Authorization(){
-const  {themeActive, NameApp } =  useAppContext(); 
+export function Registration(){
+const  {themeActive, NameApp  } =  useAppContext();
+
 
 const Title:NameObjType = { 
 //@ts-expect-error    
@@ -21,7 +22,7 @@ return (
             <div className={themeActive.logo}>{Title.name}<span>{Title.span}</span></div>
                     {/* @ts-expect-error */}
             <div className={style.podLogo}><div className={themeActive.podLogo}>{Title.slogan}</div></div>
-            <LoginForm/> 
+            <RegistrationForm/> 
         </div>
     </div>
 </div>

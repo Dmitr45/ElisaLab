@@ -8,8 +8,9 @@ import { NameObjType } from "@/app/context/types";
 import LogingForm from "@/app/components/AuthForms/Login";
 import style from './styles.module.scss';
 
-export default function PausePage(){
-let [theme, setTheme] = useState(LightTheme);
+
+export default function Authorization(){
+let [theme, setTheme] = useState(DarckTheme);
 const  {toggleDarkThemeContext, darkThemeContext, 
         NameApp,        
 } =  useAppContext(); // Переключение темы

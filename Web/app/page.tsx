@@ -1,17 +1,24 @@
 'use client';
-import {AppContextProvider} from "./context/ContextProvider";
-import { createContext, useContext, useState } from "react";
-import StartPage from "./components/StartPage/StartPage";
+import {AppContextProvider} from "@/app/context/ContextProvider";
+import { useEffect } from "react";
+import Authorization from "@/app/pages/auth/";
+
 
 
 
 
 export default function Home() {
+
+  const style = {
+    marginRight: 10,
+  }
+
+
   return (
     <div>
       <main>
         <AppContextProvider>
-          <StartPage/>
+          <Authorization/>
         </AppContextProvider>
       </main>
     </div>

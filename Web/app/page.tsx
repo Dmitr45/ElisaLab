@@ -2,19 +2,15 @@
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
 import {AppContextProvider} from "@/app/context/ContextProvider";
-import { useEffect } from "react";
-import { Authorization } from "@/app/pages/auth/";
-import { Registration } from "@/app/pages/Registration/"
+// import { Authorization } from "@/app/pages/Auth/";
+// import { Registration } from "@/app/pages/Registration/";
+import { Start } from "@/app/pages/Start/index";
 
 
 
 
 
 export default function Home() {
-
-  const style = {
-    marginRight: 10,
-  }
 
 
   return (
@@ -23,8 +19,9 @@ export default function Home() {
         <Header/>
       </header>
       <main>
-        <Authorization/>
+        {/* <Authorization/> */}
         {/* <Registration/> */}
+        <Start/>
       </main>
       <footer>
         <Footer/>

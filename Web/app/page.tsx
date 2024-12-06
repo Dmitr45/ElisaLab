@@ -1,5 +1,6 @@
 'use client';
-import Header from "@/app/components/Header/Header"
+import Header from "@/app/components/Header/Header";
+import Footer from "@/app/components/Footer/Footer";
 import {AppContextProvider} from "@/app/context/ContextProvider";
 import { useEffect } from "react";
 import { Authorization } from "@/app/pages/auth/";
@@ -22,11 +23,11 @@ export default function Home() {
         <Header/>
       </header>
       <main>
-        {/* <Authorization/> */}
-        <Registration/>
+        <Authorization/>
+        {/* <Registration/> */}
       </main>
       <footer>
-
+        <Footer/>
       </footer>
 </AppContextProvider>
   );

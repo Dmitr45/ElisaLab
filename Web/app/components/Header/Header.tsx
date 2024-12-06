@@ -10,20 +10,25 @@ const  {toggleDarkThemeContext, darkThemeContext, themeActive } =  useAppContext
 
 
 
-let [onchegeTheme, setOncchengeTheme] = useState(true);
+let [onchegeTheme, setOncchengeTheme] = useState<boolean>(darkThemeContext);
 
 useEffect(()=>{
 //@ts-expect-error
 toggleDarkThemeContext(onchegeTheme);
-localStorage.setItem("Dark_mode", onchegeTheme.toString())
-},[ onchegeTheme ]);
+},[ onchegeTheme, darkThemeContext]);
 
 
 return (
     //@ts-expect-error
 <div className={themeActive.section}>
-    <div className={styles. header}  onClick={()=> {setOncchengeTheme(!onchegeTheme);}}>
-    <p>{onchegeTheme? " Light mode " :  " Darck mode "}</p>
-    </div>
+        <div className={styles.header}>
+            <div className={styles.theme}  onClick={()=> {setOncchengeTheme(!onchegeTheme);}}>
+                <p>{onchegeTheme? " Light mode " :  " Darck mode "}</p>
+            </div>
+            <div className={themeActive.burger}>
+                <div className={styles.burg}>
+                </div>
+            </div>
+        </div>
 </div>
 )}

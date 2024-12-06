@@ -55,4 +55,15 @@
             border: var(--background) solid 2px;
         }
     }
+    .burger{
+        div{
+            filter: invert(0);
+        }
+    }
+    .footerSect{
+        div{
+            div{
+                filter: invert(0);
+        }}
+    }
 }

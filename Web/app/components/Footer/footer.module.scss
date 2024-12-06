@@ -1,0 +1,51 @@
+.footer{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+height: 100px;
+cursor: pointer;
+
+
+
+.addMetod{
+flex: 1 1 60px;
+height: 100%;
+background-image: url("./Images/addMetod.png");
+background-size: 50px;
+background-repeat: no-repeat;
+background-position: center;
+}
+.editMetod{
+flex: 1 1 60px;
+height: 100%;
+background-image: url("./Images/editMetod.png");
+background-size: 50px;
+background-repeat: no-repeat;
+background-position: center;
+}
+.startMetod{
+flex: 1 1 60px;
+height: 100%;
+background-image: url("./Images/startMetod.png");
+background-size: 70px;
+background-repeat: no-repeat;
+background-position: center;
+}
+.nextStepMetod{
+flex: 1 1 60px;
+height: 100%;
+background-image: url("./Images/nextStep.png");
+background-size: 50px;
+background-repeat: no-repeat;
+background-position: center;
+}
+.user{
+flex: 1 1 60px;
+height: 100%;
+background-image: url("./Images/user.png");
+background-size: 70px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+}

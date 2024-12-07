@@ -1,7 +1,7 @@
 'use client'
 import { useAppContext } from "../../context/ContextProvider"
 import { pagesType, themeActiveType } from '../../context/types'
-import { Authorization } from "../Auth/index";
+import { Authorization } from "../Loginer/index";
 import { Registration } from "../Registration/index";
 import { None } from "../None/index";
 import { Navigation } from "../Navigation/index";

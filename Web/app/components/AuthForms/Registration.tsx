@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-import { NavAuth } from "../../components/NavAuth";
 
 
 export function RegistrationForm(){
@@ -9,7 +8,6 @@ return(
         <input placeholder="Email"></input>
         <input type="password" placeholder="Password"></input>
         <input type="password" placeholder="Repeat password"></input>
-        <NavAuth/>
         <button>Sign up</button>
     </div>
 )}

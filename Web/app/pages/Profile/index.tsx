@@ -1,12 +1,12 @@
 'use client'
 import style from './styles.module.scss';
-import { useAppContext } from "@/app/context/ContextProvider";
-import { NameAppType, NameObjType, themeActiveType } from "@/app/context/types";
+//import { useAppContext } from "../../context/ContextProvider";
+//import { NameAppType, themeActiveType } from "../../context/types";
 
 
 export function Profile(){
-    const  {themeActive, NameApp } : {themeActive: themeActiveType, NameApp: NameAppType} =  useAppContext(); 
-    const Title:NameObjType = {"name" : NameApp.name, "span" : NameApp.span, "slogan": NameApp.slogan}
+//    const  {NameApp } : {themeActive: themeActiveType, NameApp: NameAppType} =  useAppContext(); 
+
 return (    
 <div className={style.page}>
 Ваш личный кабинет

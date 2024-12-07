@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
-import { NavAuth } from "@/app/components/NavAuth";
+import { NavAuth } from "../../components/NavAuth";
+
 
 
 export function LoginForm(){

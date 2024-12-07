@@ -1,7 +1,7 @@
 'use client'
-import { useAppContext } from "@/app/context/ContextProvider"
-import { NameAppType, NameObjType, themeActiveType } from "@/app/context/types";
-import { RegistrationForm } from "@/app/components/AuthForms/Registration";
+import { useAppContext } from "../../context/ContextProvider"
+import { NameAppType, NameObjType, themeActiveType } from "../../context/types";
+import { RegistrationForm } from "../../components/AuthForms/Registration";
 import style from './styles.module.scss';
 
 

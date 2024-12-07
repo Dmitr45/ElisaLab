@@ -1,7 +1,7 @@
 'use client'
 import style from './styles.module.scss';
-import { useAppContext } from "@/app/context/ContextProvider";
-import { NameObjType, togglePageActiveType, NameAppType, themeActiveType } from "@/app/context/types";
+import { useAppContext } from "../../context/ContextProvider";
+import { NameObjType, togglePageActiveType, NameAppType, themeActiveType } from "../../context/types";
 
 
 export function Navigation(){

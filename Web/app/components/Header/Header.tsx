@@ -1,5 +1,5 @@
 'use client'
-import { useAppContext } from "@/app/context/ContextProvider";
+import { useAppContext } from "../../context/ContextProvider";
 import { useState, useEffect } from "react";
 import styles from "./header.module.scss"
 

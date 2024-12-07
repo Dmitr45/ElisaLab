@@ -1,8 +1,8 @@
 'use client';
-import Header from "@/app/components/Header/Header";
-import Footer from "@/app/components/Footer/Footer";
-import { AppContextProvider } from "@/app/context/ContextProvider";
-import { Routing } from "@/app/pages/Routing/";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import { AppContextProvider } from "./context/ContextProvider";
+import { Routing } from "./pages/Routing/";
 
 
 

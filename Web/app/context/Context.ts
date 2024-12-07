@@ -1,8 +1,8 @@
 'use client'
 import { useState, useCallback, useEffect } from 'react';
 import { NameObjType } from './types';
-import DarckTheme from "@/app/components/Theme/DarkTheme.module.scss";
-import LightTheme from "@/app/components/Theme/LightTheme.module.scss";
+import DarckTheme from "../components/Theme/DarkTheme.module.scss";
+import LightTheme from "../components/Theme/LightTheme.module.scss";
 
 
 export const useCreateAppContext = function(props:any) {

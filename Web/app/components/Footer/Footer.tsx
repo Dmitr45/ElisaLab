@@ -1,5 +1,5 @@
 'use client'
-import { useAppContext } from "@/app/context/ContextProvider";
+import { useAppContext } from "../../context/ContextProvider";
 import styles from "./footer.module.scss"
 import { themeActiveType, togglePageActiveType } from "@/app/context/types";
 

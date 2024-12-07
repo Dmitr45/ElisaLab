@@ -1,11 +1,11 @@
 'use client'
 import { useAppContext } from "../../context/ContextProvider"
 import { pagesType } from '../../context/types'
-import { Authorization } from "../Auth";
-import { Registration } from "../Registration";
-import { None } from "../None";
-import { Navigation } from "../Navigation";
-import { Profile } from "../Profile";
+import { Authorization } from "../Auth/index";
+import { Registration } from "../Registration/index";
+import { None } from "../None/index";
+import { Navigation } from "../Navigation/index";
+import { Profile } from "../Profile/index";
 
 
 

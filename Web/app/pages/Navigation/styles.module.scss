@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Incompleeta';
+    src: local('Incompleeta Light'), local('Incompleeta-Light'),
+        url('../../fonts/IncompleetaLight.woff2') format('woff2'),
+        url('../../fonts/IncompleetaLight.woff') format('woff'),
+        url('../../fonts/IncompleetaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.page{
+    width: 100vw;
+    height: calc(100vh - 150px) ;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.logo{
+    font-family: 'Incompleeta';
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    @media (width < 500px){
+        width: 250px;
+        font-size: 2rem;
+
+    }
+}
+
+.podLogo{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.5rem;
+
+}

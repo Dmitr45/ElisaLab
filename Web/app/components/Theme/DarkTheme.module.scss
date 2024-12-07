@@ -13,7 +13,9 @@
     --color: #ffffff;
     --antiColor: #1c1c1c;
     --highColor: #cf2069;
+    --negativHigh: #30df96;
     --textSize: 25px;
+    font-family: 'Courier New', Courier, monospace;
 
     background-color: var(--background);
     .logo, p{
@@ -67,4 +69,22 @@
                 filter: invert(1);
         }}
     }
+    .navAuth{
+        div{
+            div{
+                height: 100%;
+                opacity: 0.7;
+                filter: invert(1);
+                border: 2px solid transparent; 
+                &:hover{
+                box-sizing: border-box;                
+                border-bottom: var(--negativHigh) 2px solid;
+                border-radius: 20px;
+                cursor: pointer;
+                }                
+        }
+
+    }
+        font-family: 'Courier New', Courier, monospace;
+  }
 }

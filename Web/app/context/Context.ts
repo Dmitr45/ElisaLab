@@ -20,9 +20,9 @@ const NameApp:NameObjType = {   "name": "Elisa",
 
 
     const [darkThemeContext, setDarkThemeContext] = useState<boolean>(props.darkThemeContext || (()=>{ if  ((localStorage.getItem("DarkTheme")  == "Active")) {return true} else {return false} }));
-    let toggleDarkThemeContext = useCallback((bool:boolean):string  => {setDarkThemeContext(bool);  return "Ok"}, []);
+    const toggleDarkThemeContext = useCallback((bool:boolean):string  => {setDarkThemeContext(bool);  return "Ok"}, []);
 
-    let [themeActive, setThemeActive] = useState(DarckTheme);
+    const [themeActive, setThemeActive] = useState(DarckTheme);
 
         useEffect(()=>{
         if (darkThemeContext === true) { 
@@ -40,9 +40,23 @@ const NameApp:NameObjType = {   "name": "Elisa",
     },[darkThemeContext]);
 
 
-return { darkThemeContext, toggleDarkThemeContext, themeActive, // Темная тема
-        NameApp, // Название приложения
-}
+    const [pageActive, setPageActive] = useState<number>(props.pageActive || 0);
+    const togglePageActive = useCallback((page:number)  => {setPageActive(page);  return "Ok"}, []);
+
+//=====================================================================================================
+
+
+
+
+
+//======================================================================================================
+return { darkThemeContext, 
+        toggleDarkThemeContext, 
+        themeActive, 
+        NameApp, 
+        pageActive,
+        togglePageActive 
+        }
 }
 
 

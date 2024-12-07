@@ -1,17 +1,12 @@
 'use client';
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
-import {AppContextProvider} from "@/app/context/ContextProvider";
-// import { Authorization } from "@/app/pages/Auth/";
-// import { Registration } from "@/app/pages/Registration/";
-import { Start } from "@/app/pages/Start/index";
-
-
+import { AppContextProvider } from "@/app/context/ContextProvider";
+import { Routing } from "@/app/pages/Routing/";
 
 
 
 export default function Home() {
-
 
   return (
 <AppContextProvider>
@@ -19,9 +14,7 @@ export default function Home() {
         <Header/>
       </header>
       <main>
-        {/* <Authorization/> */}
-        {/* <Registration/> */}
-        <Start/>
+          <Routing/>
       </main>
       <footer>
         <Footer/>

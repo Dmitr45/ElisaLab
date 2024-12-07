@@ -5,6 +5,7 @@ flex-wrap: nowrap;
 height: 100px;
 cursor: pointer;
 opacity: 0.7;
+padding-bottom: 30px;
 
 
 
@@ -27,15 +28,15 @@ background-position: center;
 .startMetod{
 flex: 1 1 60px;
 height: 100%;
-background-image: url("./Images/startMetod.png");
-background-size: 70px;
+background-image: url("./Images/startMetod2.png");
+background-size: 60px;
 background-repeat: no-repeat;
 background-position: center;
 }
 .nextStepMetod{
 flex: 1 1 60px;
 height: 100%;
-background-image: url("./Images/nextStep.png");
+background-image: url("./Images/historyMetod2.png");
 background-size: 50px;
 background-repeat: no-repeat;
 background-position: center;

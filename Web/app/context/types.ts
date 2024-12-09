@@ -13,3 +13,5 @@ export type    themeActiveType = {readonly [key: string]: string};
 export type    togglePageActiveType = {(page: number):string};
 export type    NameAppType =  NameObjType;
 export type    pageActiveType = number;
+export type    tokenAuth = string;
+export type    toggleControllerTokenAuth = {(token: string): string};

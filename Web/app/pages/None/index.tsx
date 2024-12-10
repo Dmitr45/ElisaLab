@@ -2,6 +2,7 @@
 import style from './styles.module.scss';
 import { useAppContext } from "../../context/ContextProvider";
 import { NameAppType, NameObjType, themeActiveType } from "../../context/types";
+import { TimerService } from "../../components/Timer/Timer";
 
 
 export function None(){
@@ -15,4 +16,5 @@ return (
         <div className={style.podLogo}><div className={themeActive.podLogo}>{Title.slogan}</div>
         </div>
     </div>
+    <TimerService/>
 </div>)} 

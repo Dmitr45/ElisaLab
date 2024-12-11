@@ -2,7 +2,7 @@
 import style from './styles.module.scss';
 import { useAppContext } from "../../context/ContextProvider";
 import { NameAppType, NameObjType, themeActiveType } from "../../context/types";
-import { TimerService } from "../../components/Timer/Timer";
+import { TimerService } from "../../components/Timer2/Timer";
 
 
 export function None(){

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../../fonts/myriadpro-regular-webfont.eot?') format('eot'),
+    url('../../fonts/myriadpro-regular-webfont.woff') format('woff'),
+    url('../../fonts/myriadpro-regular-webfont.ttf') format('truetype'),
+    url('../../fonts/myriadpro-regular-webfont.svg#webfontZPnuZIZf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.timerBox {
+    display: flex;
+    justify-content: space-around;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 12px;
+  }
+  
+.timeWrapper{
+
+  }
+
+  .time {
+    font-size: 32px;
+  }
